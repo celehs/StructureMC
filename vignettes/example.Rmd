@@ -1,0 +1,47 @@
+---
+title: "Example with Simulated Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{StructureMC}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(StructureMC)
+```
+
+Create a matrix $A$ with $p_1 = 10$ rows and $p_2 = 9$ columns.
+
+```{r}
+p1 <- 10
+p2 <- 9
+m1 <- 6 # number of rows in A11
+m2 <- 3 # number of columns in A11
+A <- matrix(rnorm(10, mean = 0, sd = 0.1), p1, p2)
+```
+
+Find the approximation low-rank of $A$ under singular value decomposition (SVD)
+
+```{r}
+j1 <- svd(A)$d
+j2 <- svd(A)$u
+j3 <- svd(A)$v
+num <-length(which(j1 != 0))
+D <- diag(j1)
+D[num, num] <- 0
+app_low_rank_A <- j2
+A11 <- app_low_rank_A[1:m1, 1:m2]
+A12 <- app_low_rank_A[1:m1, (1+m2):p2]
+A21 <- app_low_rank_A[(1+m1):p1, 1:m2]
+A22 <- matrix(NA, nrow = p1 - m1, ncol = p2-m2)
+Arecovery <- rbind(cbind(A11, A12), cbind(A21, A22))
+Arecovery
+```
+
+Apply `smc.FUN` to recover the block $A_{22}$
+
+```{r}
+A22 <- smc.FUN(Arecovery, 2, "True", m1, m2)
+A22
+```
