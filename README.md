@@ -9,7 +9,8 @@ This is the R package `StructureMC` (Structured Matrix Completion) made and main
 You can install the `StructureMC` R package but before doing so user have to install **devtools** (via install.packages("devtools")), install the package using the following command:
 
 ```r
-library(devtools); install_github('celehs/StructureMC')
+library(devtools)
+install_github('celehs/StructureMC')
 ```
 Additionally, windows users might encounter difficulty to install the 'StructureMC' package with only the above command. You might need to install the following command instead:
 
@@ -17,7 +18,8 @@ Additionally, windows users might encounter difficulty to install the 'Structure
 install.packages("devtools")) ##If you have not install 'devtools' yet
 install.packages(c("devtools", "curl")) 
 ## install 'curl' is the part windows users might need to implement 
-library(devtools); install_github('celehs/StructureMC')
+library(devtools)
+install_github('celehs/StructureMC')
 ```
 
 For more information on this project please reference the paper "Cai, T., Cai, T. T., & Zhang, A. (2015). Structured Matrix Completion with Applications to Genomic Data Integration. Journal of the American Statistical Association." 
