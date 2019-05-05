@@ -2,6 +2,7 @@ Package: StructureMC
 Type: Package
 Title: Structured Matrix Completion
 Version: 1.0
+Date: 2015-07-30
 Authors@R: c(
     person("Yifu", "Liu", role = c("aut", "cre"), email = "2012johnnyliu@gmail.com"),
     person("Anru", "Zhang", role = "aut"),
@@ -15,3 +16,11 @@ BugReports: https://github.com/celehs/StructureMC/issues
 License: GPL-2
 Encoding: UTF-8
 RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-05-05 06:47:49 UTC; mingyang
+Author: Yifu Liu [aut, cre],
+  Anru Zhang [aut],
+  Tianxi Cai [aut],
+  T. Tony Cai [aut]
+Maintainer: Yifu Liu <2012johnnyliu@gmail.com>
+Built: R 3.5.3; ; 2019-05-05 06:49:51 UTC; unix
