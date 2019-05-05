@@ -12,7 +12,7 @@ You can install the `StructureMC` R package but before doing so user have to ins
 library(devtools)
 install_github('celehs/StructureMC')
 ```
-Additionally, windows users might encounter difficulty to install the 'StructureMC' package with only the above command. You might need to install the following command instead:
+Additionally, windows users might encounter difficulty to install the `StructureMC` package with only the above command. You might need to install the following command instead:
 
 ```r
 install.packages("devtools")) ##If you have not install 'devtools' yet
