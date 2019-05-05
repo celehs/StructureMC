@@ -21,7 +21,7 @@ Details see norm function in R base.
 }
 
 \references{
-Cai, T., Cai, T. T., & Zhang, A. (2015). Structured Matrix Completion with Applications to Genomic Data Integration. \emph{Journal of the American Statistical Association}, to appear.
+Cai, T., Cai, T. T., & Zhang, A. (2015). Structured Matrix Completion with Applications to Genomic Data Integration. \emph{Journal of the American Statistical Association}.
 }
 \author{
 Yifu Liu, Anru Zhang, Tianxi Cai and T. Tony Cai,
