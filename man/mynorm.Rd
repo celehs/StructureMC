@@ -7,7 +7,7 @@ mynorm
 This function returns the spectral norm of a real matrix if type is 2. Otherwise, it returns the matirx norm of the "norm" function using LAPACK.
 }
 \usage{
-mynorm(x, type = c("O", "I", "F", "M", "2"))
+mynorm(x, type)
 }
 
 \arguments{
