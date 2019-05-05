@@ -8,5 +8,9 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Manual"
+      href: StructureMC-manual.pdf      
     - text: "Reference"
       href: reference/index.html
+    - text: "GitHub"
+      href: https://github.com/celehs/StructureMC/
