@@ -14,8 +14,8 @@ install_github('celehs/StructureMC')
 Additionally, windows users might encounter difficulty to install the `StructureMC` package with only the above command. You might need to install the following command instead:
 
 ```r
-install.packages("devtools")) ##If you have not install 'devtools' yet
-install.packages(c("devtools", "curl")) 
+install.packages("devtools") ##If you have not install 'devtools' yet
+#install.packages(c("devtools", "curl")) 
 ## install 'curl' is the part windows users might need to implement 
 library(devtools)
 install_github('celehs/StructureMC')
