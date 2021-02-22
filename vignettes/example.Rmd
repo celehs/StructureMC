@@ -2,10 +2,14 @@
 title: "Example with Simulated Data"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{StructureMC}
+  %\VignetteIndexEntry{Example with Simulated Data}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+```{r}
+library(StructureMC)
+```
 
 Create a matrix $A$ with $p_1 = 10$ rows and $p_2 = 9$ columns.
 

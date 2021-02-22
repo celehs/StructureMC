@@ -1,18 +1,17 @@
 template:
   params:
-    bootswatch: spacelab
+    bootswatch: cosmo
     
 navbar:
   title: "StructureMC"
   type: inverse
   left:
-    - text: "Home"
+    - icon: "fa-home"
       href: index.html
     - text: "Example"
       href: articles/example.html      
-    - text: "Manual"
-      href: StructureMC-manual.pdf      
     - text: "Reference"
       href: reference/index.html
-    - text: "GitHub"
-      href: https://github.com/celehs/StructureMC/
+  right:
+    - text: "CELEHS Software"
+      href: https://celehs.github.io
