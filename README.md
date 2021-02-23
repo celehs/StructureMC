@@ -1,6 +1,8 @@
 
 # StructureMC: Structured Matrix Completion
 
+[![CRAN](https://www.r-pkg.org/badges/version/StructureMC)](https://CRAN.R-project.org/package=StructureMC)
+
 ## Overview
 
 Current literature on matrix completion focuses primarily on independent
@@ -32,4 +34,4 @@ remotes::install_github("celehs/StructureMC")
 
 Cai, T., Cai, T. T., & Zhang, A. (2015). Structured Matrix Completion
 with Applications to Genomic Data Integration. Journal of the American
-Statistical Association.
+Statistical Association. <https://doi.org/10.1080/01621459.2015.1021005>
